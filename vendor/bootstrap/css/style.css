@@ -1,0 +1,357 @@
+/*
+Name: Ujjal Deb
+Country: Bangladesh
+Email: deb.ujjal.ksa@gmail.com
+*/
+
+/*
+1. Global CSS
+2. Header section CSS
+3. Banner section CSS
+4. Our news section CSS
+5. Newsletter section CSS
+6. Blog section CSS
+7. Footer CSS
+8. Media Query
+*/
+
+/* Global CSS */
+body{
+	font-family: 'Roboto Slab', serif;
+}
+section{
+	padding: 100px 0;
+}
+p{
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+/*Header section CSS*/
+.navbar-dark{
+	background: #edeff1 !important;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: #333 !important;
+	margin-right: 15px;
+	-webkit-transition: 0.4s ease;
+	-moz-transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	transition: 0.4s ease;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+    background: #dd4b2b;
+    color: #fff !important;
+    border-radius: 8px;
+}
+
+/* Banner section CSS */
+.banner{
+	background: url(../images/bg-img.png) no-repeat center top;
+	background-size: cover;
+}
+.banner h1{
+	color: #fff;
+	font-size: 70px;
+	font-weight: 300;
+	padding-top: 250px;
+}
+.banner h4{
+	color: #fff;
+	margin-bottom: 100px;
+}
+.banner img{
+	margin-bottom: 20px;
+}
+.banner h3{
+	color: #fff;
+	font-weight: 700;
+}
+.banner p{
+	color: #fff;
+}
+.banner .btn{
+    margin: 60px auto 0;
+    display: block;
+    border-radius: 30px;
+    padding: 10px 50px;
+    color: #612316;
+}
+.banner .btn:hover{
+	background: #dd4b2b;
+	color: #fff;
+	cursor: pointer;
+}
+.banner .btn:focus {
+    box-shadow: none;
+}
+
+/* Our news section CSS */
+.our-news{
+	background: #edeff1;
+}
+.our-news h1{
+	margin-bottom: 80px;
+}
+.our-news .news-image{
+	overflow: hidden;
+	width: 100%;
+	height: 240px;
+	margin-bottom: 24px;
+}
+.our-news img{
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+.our-news img:hover{
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+.our-news .btn{
+	background: #fff;
+	font-weight: 300;
+	border-radius: 30px;
+	padding: 10px 36px;
+	font-size: 14px;
+	margin-top: 16px;
+}
+.our-news .btn:hover{
+	background: #dd4b2b;
+	color: #fff;
+	cursor: pointer;
+}
+.our-news .btn:focus {
+    box-shadow: none;
+}
+
+/* Newsletter section CSS */
+.newsletter-section{
+	background: url(../images/newsletter-bg-img.png) no-repeat center top;
+	background-size: cover;
+	padding: 0;
+}
+.newsletter-section .newsletter-opacity{
+	background: rgba(0,0,0,0.6);
+	padding: 100px 0;
+}
+.newsletter-section h1{
+	color: #fff;
+}
+.newsletter-section p{
+	color: #fff;
+	margin-bottom: 35px;
+}
+.newsletter-section input{
+	border-radius: 30px !important;
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+    left: 18px;
+    box-shadow: none;
+}
+.newsletter-section input:focus{
+	box-shadow: none;
+	background: rgba(255,255,255,0.3);
+    color: #fff;
+    border: none;
+}
+.newsletter-section .btn{
+	border-radius: 30px !important;
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+	right: 18px;
+}
+.newsletter-section .btn:hover{
+	background: #dd4b2b;
+	color: #fff;
+	cursor: pointer;
+}
+.newsletter-section .btn:focus{
+	box-shadow: none;
+}
+
+/* Blog section CSS */
+.blog-section{
+	background: #edeff1;
+}
+.blog-section h1{
+	margin-bottom: 80px;
+}
+.blog-section .btn{
+	background: #dd4b2b;
+	color: #fff;
+	border-radius: 30px;
+	padding: 8px 50px;
+	margin: 20px 0 80px;
+}
+.blog-section .btn:hover{
+	background: #fff;
+	color: #612316;
+}
+.blog-section .btn:focus{
+	box-shadow: none;
+}
+.blog-section .heading01{
+	margin-top: 50px;
+}
+.blog-section .btn02 {
+    margin: 20px 0 0px;
+}
+
+/* Footer CSS */
+.footer{
+	background: #d75d0e;
+}
+.footer ul li a{
+	color: #fff;
+}
+.footer ul li a:hover{
+	text-decoration: none;
+	position: relative;
+	left: 5px;
+}
+.footer p{
+	color: #fff;
+	margin: 0;
+}
+.footer .p01{
+	margin-top: 20px;
+}
+
+/* Media query */
+/* For mobile devices */
+@media screen and (max-width: 767px){
+	section{
+		padding: 40px 0;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	.navbar-dark .navbar-toggler {
+	    border-color: rgba(255,255,255,.5);
+	}
+	.navbar-dark .navbar-nav .nav-link {
+	    padding-left: 10px;
+	}
+	.banner h1 {
+	    font-size: 30px;
+	    padding-top: 110px;
+	}
+	.banner h4 {
+	    margin-bottom: 400px;
+	    font-size: 16px;
+	}
+	.banner h3 {
+	    font-weight: 400;
+	}
+	.banner .btn {
+	    margin: 20px auto 0;
+	}
+	.our-news h1 {
+	    margin-bottom: 0px;
+	}
+	.our-news img {
+	    margin-top: 40px;
+	}
+	.our-news .btn {
+	    margin-top: 0px;
+	}
+	.newsletter-section .newsletter-opacity {
+	    padding: 50px 0;
+	}
+	.newsletter-section input {
+	    font-size: 14px;
+	}
+	.newsletter-section .btn {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    font-size: 14px;
+	}
+	.blog-section h1 {
+	    margin-bottom: 25px;
+	}
+	.blog-section h2,
+	.blog-section p {
+		text-align: center;
+	}
+	.blog-section .btn {
+		display: block;
+	    margin: 5px auto 28px;
+	}
+	.blog-section .img02 {
+		margin-top: 20px;
+	}
+	.blog-section .heading01 {
+	    margin-top: 20px;
+	}
+	.blog-section .btn02 {
+		margin: 0 auto;
+	}
+}
+
+/* For tablet devices */
+@media (min-width: 768px) and (max-width: 991px){
+	section{
+		padding: 50px 0;
+	}
+	.navbar-dark .navbar-toggler {
+	    border-color: rgba(255,255,255,.5);
+	}
+	.banner h1 {
+	    font-size: 40px;
+	    padding-top: 40px;
+	}
+	.banner h4 {
+	    font-size: 18px;
+	}
+	.banner .btn {
+	    margin: 15px auto 0;
+	}
+	.our-news h1 {
+	    margin-bottom: 35px;
+	}
+	.our-news .news-image{
+		height: 226px;
+	}
+	.our-news .news-image-bottom {
+	    margin: 50px 0 24px;
+	}
+	.newsletter-section .newsletter-opacity {
+	    padding: 50px 0;
+	}
+	.blog-section h1 {
+	    margin-bottom: 35px;
+	}
+	.blog-section h2,
+	.blog-section p {
+		text-align: center;
+	}
+	.blog-section .btn {
+		display: block;
+	    margin: 5px auto 28px;
+	}
+	.blog-section img {
+		display: block;
+		margin: auto;
+	}
+	.blog-section .img02 {
+		margin-top: 20px;
+	}
+	.blog-section .heading01 {
+	    margin-top: 20px;
+	}
+	.blog-section .btn02 {
+		margin: 0 auto;
+	}
+}
